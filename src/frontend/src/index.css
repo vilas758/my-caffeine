@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/assets/fonts/DMSans.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.375rem;
+
+    /* Teal primary: #1F5664 ≈ oklch(0.40 0.07 207) */
+    /* Orange accent: #D07A2D ≈ oklch(0.64 0.14 50) */
+
+    --background: 1 0 0;
+    --foreground: 0.13 0.005 207;
+
+    --card: 0.97 0.005 220;
+    --card-foreground: 0.13 0.005 207;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.13 0.005 207;
+
+    --primary: 0.4 0.07 207;
+    --primary-foreground: 1 0 0;
+
+    --secondary: 0.94 0.015 220;
+    --secondary-foreground: 0.3 0.06 207;
+
+    --muted: 0.95 0.008 220;
+    --muted-foreground: 0.5 0.02 220;
+
+    --accent: 0.64 0.14 50;
+    --accent-foreground: 1 0 0;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.85 0.015 220;
+    --input: 0.88 0.012 220;
+    --ring: 0.4 0.07 207;
+
+    /* Custom tokens */
+    --teal: 0.4 0.07 207;
+    --teal-dark: 0.3 0.07 207;
+    --teal-light: 0.55 0.07 207;
+    --orange: 0.64 0.14 50;
+    --orange-hover: 0.58 0.16 50;
+    --light-bg: 0.97 0.005 220;
+    --notice-bg: 0.95 0.015 225;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.97 0.005 220;
+    --sidebar-foreground: 0.13 0.005 207;
+    --sidebar-primary: 0.4 0.07 207;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.94 0.015 220;
+    --sidebar-accent-foreground: 0.3 0.06 207;
+    --sidebar-border: 0.85 0.015 220;
+    --sidebar-ring: 0.4 0.07 207;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", "Plus Jakarta Sans", sans-serif;
+  }
+}
