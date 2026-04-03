@@ -454,7 +454,7 @@ function HeroSection({ onNav }: { onNav: (id: string) => void }) {
           <h2 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl leading-tight mb-3">
             सेवा आता
           </h2>
-          <h2 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl leading-tight mb-6">
+          <h2 className="text-orange font-bold text-3xl sm:text-4xl md:text-5xl leading-tight mb-6">
             ऑनलाईन उपलब्ध!
           </h2>
           <p className="text-white/80 text-base mb-8 leading-relaxed">
